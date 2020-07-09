@@ -20,7 +20,7 @@ function love.draw()
     love.graphics.printf(
         msg,
         0,
-        (WINDOW_HEIGHT - string.len(msg))/2, 
+        WINDOW_HEIGHT/2 - 6, -- 12 is the default font in love 2D is 12 pixels tall, subtracting 6 centres it perfectly.
         WINDOW_WIDTH,
         alignment)
     
